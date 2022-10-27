@@ -1,0 +1,444 @@
+---
+title: "Minha Trajetória Acadêmica e Profissional"
+subtitle: "Dificuldades e Conquistas"
+author: "Fernando Bastos (DET/UFV)"
+date: 2020-07-03
+output:
+  xaringan::moon_reader:
+    css: ["default", "ibm-plex.css", "ibm-plex-fonts.css"]
+    self_contained: FALSE
+    nature:
+      # highlightStyle: github
+      highlightLines: TRUE
+      countIncrementalSlides: FALSE
+---
+
+```{r, cache=FALSE, include=FALSE}
+source("setup_knitr.R")
+library(tidyverse)
+library(data.table)
+library(kableExtra)
+```
+
+
+# Pré - Academia
+
+- Nasci em Belo - Horizonte no ano de 1984
+- `Mudei para Alto Piquiri - PR em 1991`
+- Mudei para Lajinha - MG em 1993
+- `Mudei para São Paulo - SP em 1994`
+- Voltei para Lajinha em 1995
+- `Mudei para Cruzeiro do Oeste - PR em 1996`
+- Voltei para Lajinha em 1997
+- `Mudei para Juiz de Fora no final de 2002`
+- Mudei para Viçosa em Março de 2003
+
+Ufa...Mas ainda tem mais mudanças pela frente!
+
+```{r, echo=FALSE, out.width = "300px"}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/mudanca2.gif")
+```
+
+---
+
+# Universidade
+
+<p style="text-align: justify;">
+Ingressei no curso de Matemática no ano de 2003, via PASES - Vestibular seriado da UFV. 
+Naquele ano, praticamente, não existia celular, computador era lento, usavamos disquete (poucos kbytes de memória) e ainda nos comunicavámos com a familia via telefone publico e cartas! 
+</p>
+```{r, echo=FALSE}
+mat <- fread("~/Projetos/Apresentacoes/2022/PPESTBIO/tabelas/Matematica.csv", encoding = "UTF-8")
+mat %>%
+  kbl() %>%
+  kable_classic_2(full_width = F) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  row_spec(3:5, bold = T, color = "white", background = "#c26d69")%>%
+  row_spec(15, bold = T, color = "white", background = "#c26d69")%>%
+  row_spec(13, bold = T, color = "white", background = "#72c269")%>%
+  row_spec(18, bold = T, color = "white", background = "#72c269")%>%
+  row_spec(26, bold = T, color = "white", background = "#72c269")%>%
+  row_spec(31, bold = T, color = "white", background = "#72c269")%>%
+  row_spec(34:36, bold = T, color = "white", background = "#72c269")%>%
+  row_spec(40:41, bold = T, color = "white", background = "#72c269")%>%
+  row_spec(47, bold = T, color = "white", background = "#72c269")%>%
+  scroll_box(width = "760px", height = "350px")%>%
+  kable_styling(bootstrap_options = "striped", font_size = 12)
+```
+
+---
+# Eventos
+
+- I Encontro de Ex-Alunos do DMA - Prata Da Casa. 2003. (Encontro).
+```{r, echo=FALSE, out.width='90%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/EncontroPrataCasa2003.jpg")
+```
+
+---
+
+# Eventos
+
+- I Semana Acadêmica de Licenciaturas em Ciências Exatas. 2003. (Encontro).
+- `VI Reunião Regional da Sociedade Brasileira de Matemática. 2004. (Encontro).`
+- 25° Colóquio Brasileiro de Matemática. 2005. (Congresso).
+- `A Graduação na UFV: Decisão de Futuro!. 2005. (Outra).`
+- I Ciclo de Palestras da Tutoria: Aprendizagem Significativa. 2005. (Outra).
+- `Introdução a Teoria de Módulos. 2005. (Seminário).`
+- Jornada Matemática DMAT/PUC-RIO e DMA/UFV. 2005. (Encontro).
+---
+# Eventos
+
+- II Encontro de Ex-Alunos do DMA - Prata Da Casa. 2006. (Encontro).
+```{r, echo=FALSE, out.width='90%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/2006MAT.jpg")
+```
+---
+
+# Eventos
+
+- III Fórum Regional de Educação de Jovens e Adultos - Sudeste de Minas. 2006. (Encontro).
+- `I Workshop de Matemática UFV - UFSJ. 2006. (Encontro).`
+- Seminário do DMA-IC. 2006. (Seminário).
+- `XV Simposio de Iniciação Científica. 2006. (Simpósio).`
+- 26° Colóquio Brasileiro De Matemática. 2007. (Congresso).
+- `CNMAC - Congresso Nacional de Matemática Aplicada e Computacional. 2007. (Congresso).`
+- OKTOBERMAT. 2008. (Encontro).
+
+```{r, echo=FALSE, out.width = "500px"}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/parabens.gif")
+```
+
+---
+# Projetos
+
+
+- Voluntário no Projeto de Olimpiadas Brasileiras de Matemática em 2005
+- `Voluntário no Projeto de IC "Tópicos de Geometria Riemanniana e Relatividade Geral" em 2005`
+- Tutor de MAT 094 e MAT 098 - noções de algebra linear e introdução a algebra linear em 2005 (R$ 300,00)
+- `Voluntário no Projeto de Extensão "Contribuição para a Melhoria do Ensino de Matemática nas Escolas Básicas Públicas através das Olimpíadas de Matemática" em 2006`
+- Bolsista de IC no Projeto "Propagação de doenças" em 2006 (R$ 300,00)
+- `Tutor voluntário da disciplina MAT 098 e MAT 094 - Introdução a álgebra linear e noções de algebra linear em 2006`
+- Bolsista de IC no Projeto "Dinâmica da transmissão de dengue em uma rede discreta" em 2007 (R$ 300,00) (**Menção Honrosa no SIA 2007**)
+
+---
+# Recursos Financeiros
+<p style="text-align: justify;">
+Sempre tive que trabalhar para me sustentar. Em Viçosa, trabalhei desde a primeira semana de aula como garçom em eventos da cidade, principalmente, nos anos de 2003 e 2004. Fui, inclusive, a alguns bailes de formatura da UFV trabalhando como garçom.
+</p>
+```{r, echo=FALSE, out.width = "400px"}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/garcon.gif")
+```
+
+---
+# Seleção do Mestrado
+
+## Matemática
+
+```{r, echo=FALSE, out.width='90%', out.height='150%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Mestrado_Matematica1.JPG")
+```
+---
+
+# Estatística Aplicada e Biometria
+
+```{r, echo=FALSE, out.width='90%', out.height='150%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/AprovacaoPPESTBIO.png")
+```
+
+---
+
+## Histórico do Curso de Mestrado em Estatística Aplicada e Biometria
+
+```{r, echo=FALSE}
+
+mest <- fread("~/Projetos/Apresentacoes/2022/PPESTBIO/tabelas/Mestrado.csv", encoding = "UTF-8")
+mest %>%
+  kbl() %>%
+  kable_classic_2(full_width = F) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))%>%
+  scroll_box(width = "760px", height = "550px")%>%
+  kable_styling(bootstrap_options = "striped", font_size = 12)
+```
+
+---
+
+# Eventos
+
+- Curso de Verão da UFMG
+
+```{r, echo=FALSE, out.width='90%', out.height='80%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Verao.png")
+```
+
+---
+
+##Eventos
+
+- XXV International Biometric Conference. 2010. (Congresso).
+- `IX Encontro Mineiro de Estatística. (Encontro).`
+
+## Projeto de Mestrado
+
+- Análise Conjunta da Fatores Baseada em Escolhas: Estimação e Inferências
+
+
+## Concursos
+
+- Instituto Federal de São João Evangelista
+- Instituto Federal do Espirito Santo
+- CEFET - MG
+- Universidade Federal de Viçosa Campus UFV - Florestal
+
+---
+# Carreira Acadêmica (2010 - 2012)
+
+- `Entrada em exercício - 02 de Agosto de 2010`
+- Mudança definitiva para Florestal
+- `Coordenador da Tutoria de Florestal - Setembro de 2010`
+- Casamento em Fevereiro de 2011
+- `Coordenador do Curso de Matemática - Novembro de 2011`
+ - Criação do Projeto Pedagógico do Curso de Matemática - Licenciatura
+ - `Compra de um laboratório para as disciplinas de prática de Matemática`
+ - Duas vagas de docente para o curso de Matemática
+ - `Compra de diversos livros para as disciplinas de Matemática`
+- Chefe da Divisão de Extensão e Cultura - Maio de 2012
+ - `Criação do centro de custo da Divisão de Extensão`
+ - Realização da $41^{\circ}$ Semana do Produtor Rural
+ - `Criação do Projeto "Campus Tour"`
+ - Manutenção de parceria com o SENAR
+---
+
+# Carreira Acadêmica (2013 - 2014)
+
+- Diretor de Extensão e Cultura - Maio de 2013
+ - `Coordenação do Pronatec - 2013 e 2014`
+ - Criação do Site da Diretoria e da Logomarca
+ - `Criação do Siscert e do SAAP`
+ - Criação da Coordenação de Cultura - Atual Diretora de Pesquisa
+ - `Mudamos a forma de cálculo para o número de projetos de Extensão e Cultura do Campus`
+ - Aprovação de um programa no edital Proext-2013
+ - `Organização da $42^{\circ}$ e $43^{\circ}$ Semana do Produtor Rural`
+ - Criação do Conselho de Extensão e Cultura
+ - `Manutenção de parceria com o SENAR`
+
+---
+# Inscrição no Doutorado (2014/2)
+
+- Cursei a displina de Probabilidade e Seminários do Doutorado em Matemática da UFMG
+ 
+
+```{r, echo=FALSE, out.width='90%', out.height='80%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/ProbUFMG.png")
+```
+
+Me inscrevi nos seguintes processos seletivos:
+
+- Estatística da UFMG
+- `Estatística da Unicamp`
+- Matemática Aplicada da Unicamp
+- `Estatística de São Carlos`
+- Estatística da UFPE
+
+---
+
+```{r, echo=FALSE, out.width='90%', out.height='100%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/AprovacoesDoutorado.png")
+```
+---
+
+# UFMG - Doutorado em Estatística
+
+```{r, echo=FALSE, out.width='90%', out.height='100%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/UFMG.png")
+```
+
+## Agradecimentos
+
+- Programa de Pós - Graduação em Estatística Aplicada e Biometria
+- `Carlos Henrique Osório Silva`
+- José Ivo Ribeiro Júnior
+- `Paulo Roberto Cecon`
+
+---
+# 2015
+
+```{r, echo=FALSE, out.width='90%', out.height='100%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Gravidez.JPG")
+```
+
+- Afastamento da UFV
+- Início do Doutorado
+---
+
+# Nascimento da Minha Primeira Filha
+
+```{r, echo=FALSE, out.width='90%', out.height='100%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Ana.JPG")
+```
+
+---
+
+
+## Histórico do Curso de Doutorado em Estatística (2015 - 2018)
+
+```{r, echo=FALSE}
+mest <- fread("~/Projetos/Apresentacoes/2022/PPESTBIO/tabelas/Doutorado.csv", encoding = "UTF-8")
+mest %>%
+  kbl() %>%
+  kable_classic_2(full_width = F) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))%>%
+  row_spec(12:13, bold = T, color = "white", background = "#c26d69")%>%
+  scroll_box(width = "760px", height = "380px")%>%
+  kable_styling(bootstrap_options = "striped", font_size = 12)
+```
+
+## Eventos
+
+- IV WASA - Workshop em Análise de Sobrevivência e Aplicações
+- `XIV Encontro Mineiro de Estatística.`
+- [stats4good](https://stats4good.github.io/sobre/)
+
+---
+
+# Retorno a UFV (2018)
+
+```{r, echo=FALSE, out.width='90%', out.height='100%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Florestal2.JPG")
+```
+
+- Ingressei no PROFMAT como orientador
+- `Iniciei a orientação de TCC's`
+- Submeti projetos a editais de Fomento
+- `Topologia Molecular Aplicada ao Estudo de Seleção de Novos Cultivares para Produção em Regiões Não Agricultáveis`
+- Termo de Parceria entre a Universidade da Califórnia e a UFV
+
+---
+# 2019 - 2022
+
+- Coordenação da VII SEMAT
+- `Aprovação de Projetos de IC`
+- Criação de Pacotes para o R (Github) e para o LaTex (figchild)
+- `Publicação do Primeiro Artigo da Tese`
+- Modelo de Regressão Logística Aplicado a Dados do Sistema de Informação de Mortalidade
+- `Avaliação Cienciométrica do Leiden Ranking`
+- Aplicações Práticas para o Ensino e Aprendizado de Estatística (Premiado no SIA)
+- `Ajuste Do Modelo De Regressão Logística A Dados Do Exame Nacional Do Ensino Médio`
+- Estatística Descritiva Aplicada a Resultados do Campeonato Brasileiro de Futebol
+- `Análise Descritiva e Comparativa da COVID19`
+- Uso do Pacote Tikz para Visualização de Conteúdos de Álgebra Linear
+
+---
+
+# Nascimento da Minha Segunda Filha
+
+```{r, echo=FALSE, out.width='90%', out.height='100%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Laura.jpg")
+```
+
+---
+
+# 2019 - 2022
+
+- UFV - Transparente
+- `Elaboração de Dashboards Estatísticos Através da Análise de Dados da Bolsa de Valores de São Paulo.`
+- Auxílio ao Ensino de Funções Matemáticas Através de Visualizações Gráficas
+- `Coorientação de uma Estudante de Mestrado na UFMG`
+- Coordenação do PIBID
+- `Análise Fundamentalista de Criptomoedas`
+- Ferramentas Práticas para o Ensino e Aprendizado de Estatística na Educação Básica
+- `Contribuições para o Ensino e Aprendizagem do Conceito de Parábola no Ensino Médio`
+- Mudança para Viçosa (Departamento de Estatística)
+- `Ingresso como Colaborador no PPESTBIO`
+- Em busca de publicações e de parcerias em áreas de interesse do PPESTBIO
+
+---
+
+# Publicações
+
+```{r, echo=FALSE, out.width='90%', out.height='80%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/PublicacoesTESE.png")
+```
+
+---
+
+# Outras publicações
+
+```{r, echo=FALSE, out.width='90%', out.height='80%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Publicacoes2.png")
+```
+---
+```{r, out.width="80%", echo=FALSE}
+xaringanExtra::embed_xaringan("https://fsbmat-ufv.github.io/ssmodels/", max_width = "100%")
+```
+---
+
+# Ensino
+
+```{r, echo=FALSE, out.width='90%', out.height='80%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/Avaliacoes2.png")
+```
+
+---
+
+# Ensino
+
+```{r, echo=FALSE, out.width='90%', out.height='80%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/AvaliacoesGrafico.png")
+
+```
+
+---
+
+# Interesses Acadêmicos
+
+- Probabilidade e Inferência
+- Regressão (Logistíca)
+- Modelagem de dados
+- Análise de dados públicos
+- Educação Estatística e Matemática
+- Visualizações Gráficas
+
+#Skills
+
+- `R`, `LaTeX`, `Geogebra`, `Github` 
+
+---
+
+# Familia
+
+
+```{r, echo=FALSE, out.width='90%', out.height='80%'}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/familia.jpeg")
+```
+
+---
+class: center
+
+## Muito obrigado!
+
+.pull-left[
+
+```{r echo=FALSE, fig.align='center', out.width="50%"}
+knitr::include_graphics("~/Projetos/Apresentacoes/2022/PPESTBIO/figures/barack.gif")
+```
+
+
+Slides criados usando os pacotes em R  📦 :
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+E os pacotes  [**knitr**](http://yihui.name/knitr), e [R Markdown](https://rmarkdown.rstudio.com).
+]
+
+.pull-right[
+
+<center>
+<img src="~/Projetos/Apresentacoes/2022/PPESTBIO/figures/fsbmat.gif" alt="Avatar" style="border-radius: 50%; max-width: 50%; "></center>
+
+<i class="fas fa-home"></i> [fsbmat-ufv.github.io](https://fsbmat-ufv.github.io)
+
+<i class="fab fa-twitter"></i> [@fsbmat](https://twitter.com/fsbmat)
+
+<!-- <i class="far fa-envelope"></i> [milz.bea@gmail.com](mailto:milz.bea@gmail.com) -->
+]
